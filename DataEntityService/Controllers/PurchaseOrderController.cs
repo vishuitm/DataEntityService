@@ -17,6 +17,7 @@ namespace DataEntityService.Controllers
         private static string connectionString;
         static PurchaseOrderController()
         {
+            //connectionString = "Data Source=localhost;Integrated Security=SSPI;Initial Catalog=DemoPaaS;Connection Timeout=30;Connection Lifetime=0;Min Pool Size=0;Max Pool Size=100;Pooling=true;";
             connectionString = "Data Source=database-1.coumj725wuis.ap-south-1.rds.amazonaws.com,1433;User ID=admin;Password=Ja!GuruJi;Initial Catalog=DemoPaaS;Connection Timeout=30;Connection Lifetime=0;Min Pool Size=0;Max Pool Size=100;Pooling=true;";
         }
         private readonly ILogger<PurchaseOrderController> _logger;
