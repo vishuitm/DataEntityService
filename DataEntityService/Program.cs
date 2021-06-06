@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace DataEntityService
@@ -20,6 +21,7 @@ namespace DataEntityService
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    //webBuilder.UseKestrel(options => { options.Listen(IPAddress.Any, 80); });
                     webBuilder.UseStartup<Startup>();
                 });
     }
